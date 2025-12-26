@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: integration-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+# Integration-specific properties
+integration:
+  input:
+    dir: /Users/soumen-m4/GitLocalRepos/soumenchattaraj/cashinvoice-order-service/input/orders
+  error:
+    dir: ./error/orders
+
+logging:
+  level:
+    org.apache.camel: INFO
+    org.cashinvoice.com: INFO
